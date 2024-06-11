@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            font-size: 24px;
+        }
+
+        .main {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .main h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .grid-item {
+            flex: 1 1 calc(33.333% - 10px);
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .grid-item {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-item {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>你好，我是文心一言</h1>
+        </div>
+        <div class="main">
+            <h2>你可以向我询问：</h2>
+            <div class="grid">
+                <div class="grid-item">城市发展动因</div>
+                <div class="grid-item">高考数学</div>
+                <div class="grid-item">PPT内容框架</div>
+                <div class="grid-item">短视频带货脚本</div>
+                <div class="grid-item">辩论灵感</div>
+                <div class="grid-item">地理知识问答</div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>使用 / 创建和收据指令，可通过 cmd + 回车换行</p>
+        </div>
+    </div>
+</body>
+</html>
