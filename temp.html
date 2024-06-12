@@ -1,73 +1,62 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>仿页面</title>
+    <title>HTML Representation</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #f7f9fc;
             margin: 0;
             padding: 0;
         }
-
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
-        }
-
-        .header {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
             text-align: center;
-            padding: 20px 0;
         }
-
-        .header h1 {
-            font-size: 24px;
-        }
-
-        .main {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        .main h2 {
-            font-size: 20px;
+        .header {
             margin-bottom: 20px;
         }
-
-        .grid {
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .header p {
+            color: #888;
+        }
+        .content {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            justify-content: center;
         }
-
-        .grid-item {
-            flex: 1 1 calc(33.333% - 10px);
-            background-color: #f9f9f9;
-            border-radius: 10px;
+        .box {
+            width: 200px;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            margin: 10px;
+            background-color: #f0f4ff;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
         }
-
+        .box:hover {
+            background-color: #e0e7ff;
+        }
+        .box h3 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .box p {
+            font-size: 14px;
+            color: #555;
+        }
         .footer {
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        @media (max-width: 768px) {
-            .grid-item {
-                flex: 1 1 calc(50% - 10px);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .grid-item {
-                flex: 1 1 100%;
-            }
+            margin-top: 20px;
+            color: #888;
         }
     </style>
 </head>
@@ -75,20 +64,36 @@
     <div class="container">
         <div class="header">
             <h1>你好，我是文心一言</h1>
+            <p>作为你的智能伙伴，我能帮你写文案，想点子，义回答问题。</p>
         </div>
-        <div class="main">
-            <h2>你可以向我询问：</h2>
-            <div class="grid">
-                <div class="grid-item">城市发展动因</div>
-                <div class="grid-item">高考数学</div>
-                <div class="grid-item">PPT内容框架</div>
-                <div class="grid-item">短视频带货脚本</div>
-                <div class="grid-item">辩论灵感</div>
-                <div class="grid-item">地理知识问答</div>
+        <div class="content">
+            <div class="box">
+                <h3>城市发展动因</h3>
+                <p>请结合第一财经发布的新一线城市排行榜，分析城市发展...</p>
+            </div>
+            <div class="box">
+                <h3>PPT内容框架</h3>
+                <p>现在你需要制作一份PPT，你需要按照我给出的主题来...</p>
+            </div>
+            <div class="box">
+                <h3>辩论灵感</h3>
+                <p>请从正方辩手的角度，对现代教育体系是否应该更加注重...</p>
+            </div>
+            <div class="box">
+                <h3>高考数学</h3>
+                <p>已知恒等式: \(\frac{x^2}{a^2}+\frac{y^2}{b^2}=1(a>b>0)...</p>
+            </div>
+            <div class="box">
+                <h3>短视频带货脚本</h3>
+                <p>现在你是一位带货一哥，你需要根据我给出的商品信息来...</p>
+            </div>
+            <div class="box">
+                <h3>地理知识问答</h3>
+                <p>现在你是一个熟悉中国地理及城市信息的知识库，你会在...</p>
             </div>
         </div>
         <div class="footer">
-            <p>使用 / 创建和收据指令，可通过 cmd + 回车换行</p>
+            <p>使用“/”创建和收集指令，可通过cmd+中车换行</p>
         </div>
     </div>
 </body>
